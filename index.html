@@ -384,8 +384,12 @@ footer{
     </button>
 
     <div class="header-title">
-        <b style="font-size:23px">🏥 ClinicPro</b>
-        <div>Clinic Management System</div>
+    <b style="display:flex;align-items:center;gap:10px;font-size:23px">
+    <img src="medimax-logo.jpg" alt="MediMax Logo"
+         style="width:35px;height:25px;object-fit:contain;">
+    MediMax
+</b>
+        <div>Complete Medical Solutions</div>
     </div>
 
     <div class="toolbar no-print">
@@ -457,7 +461,9 @@ footer{
  <div id="sectionMenu"></div>
 
  <hr>
-
+<button onclick="go('apkDownload',this)">
+ 📱 APK Download
+</button>
  <button onclick="go('packages',this)">💳 Packages</button>
  <button onclick="go('reports',this)">📊 Reports</button>
  <button onclick="go('profile',this)">👤 Clinic Profile</button>
@@ -586,7 +592,39 @@ footer{
   </div>
  </div>
 </section>
+<section id="apkDownload" class="page">
 
+ <h2>📱 APK Download</h2>
+
+ <div class="card">
+
+  <h3>MediMax Android Application</h3>
+
+  <p>
+   Download our Android application and use
+   MediMax on your mobile phone.
+  </p>
+
+  <div class="notice">
+   <b>Important:</b>
+   Download the APK file using the button below.
+  </div>
+
+  <a href="https://github.com/ShahidFarooq527/MediMax/releases/download/v1.0.0/medimax.apk"
+     target="_blank"
+     rel="noopener"
+     download
+     style="text-decoration:none;">
+
+   <button type="button" class="green">
+    📥 Download APK
+   </button>
+
+  </a>
+
+ </div>
+
+</section>
 <section id="packages" class="page">
  <h2>Packages & Subscription</h2>
 
