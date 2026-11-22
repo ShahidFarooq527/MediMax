@@ -62,8 +62,9 @@
       <div id="sectionMenu"></div>
       
       <button onclick="showPage('packagesPage')">Packages</button>
-      <button onclick="showPage('reportsPage')">Reports</button>
-      <button onclick="showPage('profilePage')">Profile</button>
+<button onclick="showPage('reportsPage')">Reports</button>
+<button onclick="showPage('restorePage')">Restore Backup</button>
+<button onclick="showPage('profilePage')">Profile</button>
       
 <a href="https://github.com/ShahidFarooq527/MediMax/releases/download/v1.0.0/medimax.apk" download class="download-apk-btn">
     Download APK
@@ -182,26 +183,38 @@
           </thead>
           <tbody id="reportTableBody"></tbody>
         </table>
-        <input type="file" id="restoreFile" accept=".txt,.json">
-
-<button
-  type="button"
-  onclick="restoreTXT()"
-  id="restoreButton">
-  Restore Backup
-</button>
-
-<p
-  id="restoreProgress"
-  style="
-    margin-top:10px;
-    font-weight:bold;
-    color:#159c91;
-    overflow-wrap:anywhere;
-  ">
-</p>
+       
       </section>
+<section id="restorePage" class="page hidden">
 
+  <h2>Restore Backup</h2>
+
+  <div class="card">
+
+    <label>Select Backup File (TXT / JSON)</label>
+
+    <input type="file" id="restoreFile" accept=".txt,.json">
+
+    <button
+      type="button"
+      onclick="restoreTXT()"
+      id="restoreButton">
+      Restore Backup
+    </button>
+
+    <p
+      id="restoreProgress"
+      style="
+        margin-top:10px;
+        font-weight:bold;
+        color:#159c91;
+        overflow-wrap:anywhere;
+      ">
+    </p>
+
+  </div>
+
+</section>
       <section id="profilePage" class="page hidden">
         <h2>Profile</h2>
         <form id="profileForm">
