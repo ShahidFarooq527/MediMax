@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shahidfarooq527.github.io/MediMax/sitemap.xml
